@@ -23,6 +23,17 @@ elif "age" in thisDict:
     print("not yet") """
 
 #  update dict pair
+"""thisDict.update({"age":25})
+print(thisDict,"upadate")"""
 
-thisDict.update({"age":25})
-print(thisDict,"upadate")
+# remove items in dict
+'''thisDict.pop("age")
+print(thisDict,"removed keys values pair")'''
+
+# removed last items in dict
+"""thisDict.popitem();
+print(thisDict,"last items removed")"""
+
+# clear full dict
+thisDict.clear();
+print(thisDict,"clear all dict items")
