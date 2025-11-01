@@ -35,5 +35,21 @@ print(thisDict,"removed keys values pair")'''
 print(thisDict,"last items removed")"""
 
 # clear full dict
-thisDict.clear();
-print(thisDict,"clear all dict items")
+"""thisDict.clear();
+print(thisDict,"clear all dict items")"""
+
+
+# make nested dict 
+makeTwoDic = {
+    "one":thisDict,
+    "two":makeDict
+};
+# print(makeTwoDic["one"],"check nested dic has created?")
+
+
+# get loop through the keys and values
+for x,obj in makeTwoDic.items():
+    print(x,"key values")
+
+    for y in obj:
+        print(y + ":",obj[y], "values")
