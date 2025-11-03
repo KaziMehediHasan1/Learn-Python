@@ -31,8 +31,7 @@ for x in thisDict:
 
 
 
-""" copy dict using many ways """
-
+# copy dict using many ways 
 """copyOne = dict(thisDict);
 print(copyOne,"copy dict")"""
 
