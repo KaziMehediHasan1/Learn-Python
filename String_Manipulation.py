@@ -11,3 +11,7 @@ names = """
 """
 
 print("Multiplied String:",names)
+
+# starwith means word is start in first?
+startWith = "Kazi Mehedi"
+print(startWith.startswith("Kazi"))
