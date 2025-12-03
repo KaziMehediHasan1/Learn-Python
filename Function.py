@@ -72,4 +72,12 @@ print(status, msg)
 """result = lambda a,b:a+b;
 print(result(3,5))"""
 
-# 
+# local and global variable
+a = 20 # is it global variable
+
+def global_func():
+    global a
+    res = a + 30
+    print(res)
+
+global_func()

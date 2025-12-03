@@ -1,0 +1,2 @@
+I am write in sample.txt file
+I am write sample.txt file in python file system related somethings..
