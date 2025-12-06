@@ -23,5 +23,27 @@ f.close()"""
 #     print("isClosed?:",f.closed)
 #     print("Mode?:",f.mode)
 
-import os
-os.remove("demo.txt")
+"""import os
+os.remove("demo.txt")"""
+
+# Creating a directory
+# Reading a directory
+# Writing to a file in a directory
+# Renaming a directory
+# Deleting a directory
+# Read Files names from directory and print list
+
+"""import os
+
+# os.mkdir("new_file/text.txt") create
+dir = os.listdir(".")
+for folderOr_FileNames in dir:
+    full_path = os.path.join(".", folderOr_FileNames)
+    # print(full_path)
+    # if os.path.isdir(full_path):
+    #     print(full_path,"it is a directory")
+        
+    if os.path.isfile(full_path):
+        print(full_path,"it is a file")
+    
+    # print(folderOr_FileNames)"""
