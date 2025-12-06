@@ -52,8 +52,18 @@ for folderOr_FileNames in dir:
 # extract from zip file
 # make zip from directory
 
-import zipfile
+import zipfile , shutil
 
-with zipfile.ZipFile("new.zip","w") as zip:
+# create zip file 
+"""with zipfile.ZipFile("new.zip","w") as zip:
     zip.write("Loop.py")
-    zip.write("List.py")
+    zip.write("List.py")"""
+    
+# Extract Zip file 
+"""with zipfile.ZipFile("new.zip","r") as zip:
+    zip.extractall()
+    extract_file = zip.namelist()
+    print(extract_file) """
+
+# make zip from dir
+shutil.make_archive("zip_file","zip","new_file")
