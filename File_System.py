@@ -47,3 +47,13 @@ for folderOr_FileNames in dir:
         print(full_path,"it is a file")
     
     # print(folderOr_FileNames)"""
+    
+# create zip file
+# extract from zip file
+# make zip from directory
+
+import zipfile
+
+with zipfile.ZipFile("new.zip","w") as zip:
+    zip.write("Loop.py")
+    zip.write("List.py")
