@@ -12,13 +12,16 @@ f.close()"""
 print(writefile)
 f.close()"""
 
-with open("sample.txt","w+") as f:
-    f.write("I am write in sample.txt file")
-    f.write("\nI am write sample.txt file in python file system related somethings..")
-    f.seek(0)
-    read_sample = f.read()
-    # print(read_sample)
-    f.close()
-    print("Filename:",f.name)
-    print("isClosed?:",f.closed)
-    print("Mode?:",f.mode)
+# with open("sample.txt","w+") as f:
+#     f.write("I am write in sample.txt file")
+#     f.write("\nI am write sample.txt file in python file system related somethings..")
+#     f.seek(0)
+#     read_sample = f.read()
+#     # print(read_sample)
+#     f.close()
+#     print("Filename:",f.name)
+#     print("isClosed?:",f.closed)
+#     print("Mode?:",f.mode)
+
+import os
+os.remove("demo.txt")
