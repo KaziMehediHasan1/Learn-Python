@@ -66,4 +66,24 @@ import zipfile , shutil
     print(extract_file) """
 
 # make zip from dir
-shutil.make_archive("zip_file","zip","new_file")
+# shutil.make_archive("zip_file","zip","new_file")
+
+# csv file 
+import csv 
+"""
+data = [
+    ["Name","Salary","Designation","Department","Location"],
+    ["John Doe","50000","Software Engineer","IT","New York"],
+    ["Jane Smith","60000","Data Analyst","Marketing","San Francisco"],
+    ["Sam Brown","55000","Product Manager","Product","Chicago"]
+]
+
+with open("new.csv","w") as file:
+   csv_file = csv.writer(file)
+   csv_file.writerows(data)
+   print("CSV file created successfully")"""
+   
+with open("new.csv","r") as file:
+    csv_file = csv.reader(file)
+    for row in csv_file:
+        print(row)
