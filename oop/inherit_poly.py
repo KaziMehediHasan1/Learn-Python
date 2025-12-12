@@ -55,10 +55,10 @@ class Foutuner(ToyotaCar):
       
         
         
-four1 = Foutuner("builder","fortune model")
+# four1 = Foutuner("builder","fortune model")
 # print(four1.start())
 # print(four1.type)
-print(four1.name)
+# print(four1.name)
 
 # inheritence - multiple inheritence
 class A:
@@ -68,8 +68,43 @@ class B:
 class C(A,B):
     varC = "welcome class C"
     
-class1 = C()
+# class1 = C()
 # print(class1.varC)
 # print(class1.varB)
 # print(class1.varA)
 
+
+# class methods
+
+class Person:
+    name = "anonymous"
+    
+    """def changeName(self,name):
+        # self.name = name
+        # Person.name = name
+        self.__class__.name ="Hasan"""
+    
+    @classmethod # decorator
+    def changeName(cls,name):
+        cls.name = name
+
+# person1 = Person()
+# person1.changeName("Mehedi")
+# print(person1.name)
+# print(Person.name)
+
+# another 
+class Student:
+    def __init__(self,phy,chem,math):
+        self.physics = phy
+        self.chemistry = chem
+        self.math = math
+        # self.percentage = str((self.physics + self.chemistry + self.math) / 3) + "%"
+    @property
+    def changePerc(self):
+        return str((self.physics + self.chemistry + self.math) / 3) + "%"
+        
+stu1 = Student(98,97,99)
+print(stu1.changePerc)
+stu1.physics = 86
+print(stu1.changePerc)
