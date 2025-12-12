@@ -107,3 +107,6 @@ try:
 except AttributeError:
     print("Error: The 'name' attribute no longer exists on this object.")
         
+        
+# del keyword for deleting propertise
+
